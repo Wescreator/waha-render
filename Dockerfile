@@ -1,8 +1,16 @@
 FROM devlikeapro/waha:latest
 
+WORKDIR /app
 EXPOSE 3000
 
 ENV WAHA_FRONTEND_ENABLED=true
 ENV WAHA_LOG_LEVEL=info
 ENV WAHA_STORE=fs
 ENV WAHA_MULTI_DEVICE=true
+ENV WAHA_API_KEY=changeme
+ENV WAHA_WS_ENGINE=baileys
+ENV WAHA_QRCODE_TIMEOUT=120
+ENV WAHA_EXPERIMENTAL_ENGINE=true
+ENV WAHA_PUBLIC_URL=https://domus-server-waha.onrender.com
+
+CMD ["node", "index.js"]
