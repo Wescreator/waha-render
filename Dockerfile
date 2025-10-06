@@ -13,4 +13,3 @@ ENV WAHA_QRCODE_TIMEOUT=120
 ENV WAHA_EXPERIMENTAL_ENGINE=true
 ENV WAHA_PUBLIC_URL=https://domus-server-waha.onrender.com
 
-CMD ["node", "index.js"]
